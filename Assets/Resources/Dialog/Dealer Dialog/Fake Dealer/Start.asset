@@ -1,0 +1,32 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a43b157910b8eb5439b57e08973b7ea2, type: 3}
+  m_Name: Start
+  m_EditorClassIdentifier: 
+  dialogLines:
+  - text: Bien le bonjour! Comment je peux vous aider?
+    enterLineEvent: {fileID: 0}
+    expression: {fileID: -1805575051, guid: b3af7beefe26a67488e6004fe4e86f0e, type: 3}
+    timeBetweenCharacters: 0
+    firstResponse:
+      responseOption: Euh...
+      responseEvent: {fileID: 0}
+      answerDialogSection: {fileID: 11400000, guid: 0f62890ee7b2a094fb9a1930bfbdaef9, type: 2}
+      keepControlsOff: 0
+    secondResponse:
+      responseOption: Rien, au revoir
+      responseEvent: {fileID: 0}
+      answerDialogSection: {fileID: 11400000, guid: 0d61e57c60bef694d995b2b86b766db6, type: 2}
+      keepControlsOff: 0
+    canRespond: 1
+    voiceline: {fileID: 0}
+    continueEvent: {fileID: 0}

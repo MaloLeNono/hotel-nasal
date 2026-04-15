@@ -1,0 +1,67 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a43b157910b8eb5439b57e08973b7ea2, type: 3}
+  m_Name: Fourth Flour
+  m_EditorClassIdentifier: 
+  dialogLines:
+  - text: Bien le bonjour!
+    enterLineEvent: {fileID: 0}
+    expression: {fileID: -1163311788, guid: b3af7beefe26a67488e6004fe4e86f0e, type: 3}
+    timeBetweenCharacters: 0
+    firstResponse:
+      responseOption: 
+      responseEvent: {fileID: 0}
+      answerDialogSection: {fileID: 0}
+      keepControlsOff: 0
+    secondResponse:
+      responseOption: 
+      responseEvent: {fileID: 0}
+      answerDialogSection: {fileID: 0}
+      keepControlsOff: 0
+    canRespond: 0
+    voiceline: {fileID: 0}
+    continueEvent: {fileID: 0}
+  - text: "On a d\xFB s'installer dans le couloir... Il n'y a pas grand chose sur
+      cet \xE9tage!"
+    enterLineEvent: {fileID: 0}
+    expression: {fileID: -1163311788, guid: b3af7beefe26a67488e6004fe4e86f0e, type: 3}
+    timeBetweenCharacters: 0
+    firstResponse:
+      responseOption: 
+      responseEvent: {fileID: 0}
+      answerDialogSection: {fileID: 0}
+      keepControlsOff: 0
+    secondResponse:
+      responseOption: 
+      responseEvent: {fileID: 0}
+      answerDialogSection: {fileID: 0}
+      keepControlsOff: 0
+    canRespond: 0
+    voiceline: {fileID: 0}
+    continueEvent: {fileID: 0}
+  - text: Mais je pense que tu connais mon truc! Tu veux jouer?
+    enterLineEvent: {fileID: 0}
+    expression: {fileID: -1163311788, guid: b3af7beefe26a67488e6004fe4e86f0e, type: 3}
+    timeBetweenCharacters: 0
+    firstResponse:
+      responseOption: Oui
+      responseEvent: {fileID: 11400000, guid: 631049f70d03e7242a808d4d9703d7e9, type: 2}
+      answerDialogSection: {fileID: 0}
+      keepControlsOff: 0
+    secondResponse:
+      responseOption: Non
+      responseEvent: {fileID: 0}
+      answerDialogSection: {fileID: 0}
+      keepControlsOff: 0
+    canRespond: 1
+    voiceline: {fileID: 0}
+    continueEvent: {fileID: 0}

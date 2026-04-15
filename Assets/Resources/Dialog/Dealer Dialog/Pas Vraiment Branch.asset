@@ -1,0 +1,45 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a43b157910b8eb5439b57e08973b7ea2, type: 3}
+  m_Name: Pas Vraiment Branch
+  m_EditorClassIdentifier: 
+  dialogLines:
+  - text: Pfft...
+    enterLineEvent: {fileID: 0}
+    expression: {fileID: -2067136717, guid: b3af7beefe26a67488e6004fe4e86f0e, type: 3}
+    timeBetweenCharacters: 0
+    firstResponse:
+      responseOption: 
+      responseEvent: {fileID: 0}
+      answerDialogSection: {fileID: 0}
+    secondResponse:
+      responseOption: 
+      responseEvent: {fileID: 0}
+      answerDialogSection: {fileID: 0}
+    canRespond: 0
+    voiceline: {fileID: 0}
+    continueEvent: {fileID: 0}
+  - text: Tant pis pour toi, alors!
+    enterLineEvent: {fileID: 0}
+    expression: {fileID: -1872489138, guid: b3af7beefe26a67488e6004fe4e86f0e, type: 3}
+    timeBetweenCharacters: 0
+    firstResponse:
+      responseOption: 
+      responseEvent: {fileID: 0}
+      answerDialogSection: {fileID: 0}
+    secondResponse:
+      responseOption: 
+      responseEvent: {fileID: 0}
+      answerDialogSection: {fileID: 0}
+    canRespond: 0
+    voiceline: {fileID: 0}
+    continueEvent: {fileID: 0}

@@ -1,0 +1,66 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a43b157910b8eb5439b57e08973b7ea2, type: 3}
+  m_Name: Morgana Dialog
+  m_EditorClassIdentifier: 
+  dialogLines:
+  - text: Heh... It's almost SCARY how good I am!
+    enterLineEvent: {fileID: 0}
+    expression: {fileID: 21300000, guid: c23b654cf48be9a4a83f7f2a587f2532, type: 3}
+    timeBetweenCharacters: 0
+    firstResponse:
+      responseOption: 
+      responseEvent: {fileID: 0}
+      answerDialogSection: {fileID: 0}
+      keepControlsOff: 0
+    secondResponse:
+      responseOption: 
+      responseEvent: {fileID: 0}
+      answerDialogSection: {fileID: 0}
+      keepControlsOff: 0
+    canRespond: 0
+    voiceline: {fileID: 8300000, guid: 4375be0e81ec21f42a438776fbebdd79, type: 3}
+    continueEvent: {fileID: 0}
+  - text: Woah! Looking cool, Joker!
+    enterLineEvent: {fileID: 0}
+    expression: {fileID: 21300000, guid: c23b654cf48be9a4a83f7f2a587f2532, type: 3}
+    timeBetweenCharacters: 0
+    firstResponse:
+      responseOption: 
+      responseEvent: {fileID: 0}
+      answerDialogSection: {fileID: 0}
+      keepControlsOff: 0
+    secondResponse:
+      responseOption: 
+      responseEvent: {fileID: 0}
+      answerDialogSection: {fileID: 0}
+      keepControlsOff: 0
+    canRespond: 0
+    voiceline: {fileID: 8300000, guid: d1a53b95d28f9264bb6d5283f5b6b46b, type: 3}
+    continueEvent: {fileID: 0}
+  - text: Glory to Israel and Netanyahu
+    enterLineEvent: {fileID: 0}
+    expression: {fileID: 21300000, guid: c23b654cf48be9a4a83f7f2a587f2532, type: 3}
+    timeBetweenCharacters: 0
+    firstResponse:
+      responseOption: 
+      responseEvent: {fileID: 0}
+      answerDialogSection: {fileID: 0}
+      keepControlsOff: 0
+    secondResponse:
+      responseOption: 
+      responseEvent: {fileID: 0}
+      answerDialogSection: {fileID: 0}
+      keepControlsOff: 0
+    canRespond: 0
+    voiceline: {fileID: 8300000, guid: 02fb2283461d44147a9c04365ab5aa52, type: 3}
+    continueEvent: {fileID: 0}
