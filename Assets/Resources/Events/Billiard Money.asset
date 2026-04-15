@@ -12,4 +12,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e0f4e51334b443b88ff5a2649b253ba4, type: 3}
   m_Name: Billiard Money
   m_EditorClassIdentifier: 
-  amount: 2500
+  amount: 7000
