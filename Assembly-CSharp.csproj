@@ -74,6 +74,7 @@
     <Compile Include="Assets\Scripts\ScriptableObjects\Dialog\DialogSectionData.cs" />
     <Compile Include="Assets\Scripts\PlayerController.cs" />
     <Compile Include="Assets\Scripts\PlayerInventory.cs" />
+    <Compile Include="Assets\Scripts\Fist.cs" />
     <Compile Include="Assets\Scripts\Loan.cs" />
     <Compile Include="Assets\Scripts\Deck.cs" />
     <Compile Include="Assets\Scripts\ScriptableObjects\BlackJackEvent.cs" />
@@ -102,6 +103,7 @@
     <Compile Include="Assets\Scripts\Dancer.cs" />
     <Compile Include="Assets\Scripts\StopMusic.cs" />
     <Compile Include="Assets\Scripts\DialogNpc.cs" />
+    <Compile Include="Assets\Scripts\DestroyMoney.cs" />
     <Compile Include="Assets\Scripts\Water.cs" />
     <Compile Include="Assets\Scripts\BombotTrigger.cs" />
     <Compile Include="Assets\Scripts\LongDialogObject.cs" />
@@ -121,14 +123,13 @@
     <Compile Include="Assets\Scripts\Bombot.cs" />
     <Compile Include="Assets\Scripts\Lender.cs" />
     <Compile Include="Assets\Scripts\DataClasses\CreditsSequence.cs" />
+    <Compile Include="Assets\Scripts\EntranceDoors.cs" />
     <Compile Include="Assets\Scripts\DataClasses\DialogLine.cs" />
     <Compile Include="Assets\Scripts\CutsceneDialog.cs" />
     <Compile Include="Assets\Scripts\JsonFileLoader.cs" />
     <Compile Include="Assets\Scripts\Trap.cs" />
     <Compile Include="Assets\Scripts\BilliardBall.cs" />
     <Compile Include="Assets\Scripts\DanceFloor.cs" />
-    <Compile Include="Assets\Scripts\EntranceDoors.cs" />
-    <Compile Include="Assets\Scripts\DestroyMoney.cs" />
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Overlay.shader" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap.shader" />

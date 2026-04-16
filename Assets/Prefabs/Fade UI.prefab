@@ -97,7 +97,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   blackOverlay: {fileID: 6806034774854453114}
-  fadeTime: 1.5
+  smoothTime: 1.5
 --- !u!1 &6806034774854453112
 GameObject:
   m_ObjectHideFlags: 0

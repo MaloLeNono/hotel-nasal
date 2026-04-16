@@ -1,13 +1,11 @@
 ﻿using System.Collections;
-using System.Runtime.CompilerServices;
-using UnityEditor;
 using UnityEngine;
 using UnityEngine.UI;
 
 public class SceneFadeIn : MonoBehaviour
 {
     [SerializeField] private Image blackOverlay;
-    [SerializeField] private float fadeTime;
+    [SerializeField] private float smoothTime;
 
     private void Awake()
     {
@@ -19,20 +17,22 @@ public class SceneFadeIn : MonoBehaviour
 
     private IEnumerator FadeIn()
     {
-        float timer = 0f;
-        float startAlpha = blackOverlay.color.a;
+        float alpha = 1f;
+        float velocity = 0f;
 
-        while (timer < fadeTime)
+        while (alpha > 0.001f)
         {
-            timer += Time.deltaTime;
-
-            float t = timer / fadeTime;
+            alpha = Mathf.SmoothDamp(alpha, 0f, ref velocity, smoothTime);
 
             Color color = blackOverlay.color;
-            color.a = Mathf.Lerp(startAlpha, 0f, t);
+            color.a = alpha;
             blackOverlay.color = color;
 
             yield return null;
         }
+        
+        Color finalColor = blackOverlay.color;
+        finalColor.a = 0f;
+        blackOverlay.color = finalColor;
     }
 }

@@ -253,7 +253,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3d04b4304bbc49b3808dcee74dffc2f0, type: 3}
   m_Name: TextClip
   m_EditorClassIdentifier: 
-  text: "Je suis sorti de l'h\xF4tel..."
+  text: "J'ai quitt\xE9 l'h\xF4tel..."
 --- !u!114 &-4322057553014361267
 MonoBehaviour:
   m_ObjectHideFlags: 1

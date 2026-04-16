@@ -30,7 +30,7 @@ MonoBehaviour:
     canRespond: 0
     voiceline: {fileID: 0}
     continueEvent: {fileID: 0}
-  - text: "Je vois que vous avez r\xE9ussi a payer l'ascenseur..."
+  - text: "Je vois que vous avez r\xE9ussi \xE0 payer l'ascenseur..."
     enterLineEvent: {fileID: 0}
     expression: {fileID: -1805575051, guid: b3af7beefe26a67488e6004fe4e86f0e, type: 3}
     timeBetweenCharacters: 0

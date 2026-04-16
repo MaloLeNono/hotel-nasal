@@ -20,7 +20,7 @@ public class EntranceDoors : MonoBehaviour, IInteractable
         unlockDialog.dialogLines[1].firstResponse.action = () =>
         {
             SceneManager.LoadScene(PlayerInventory.Instance.Items.Contains(_torchItem)
-                ? "BestEnding"
+                ? "RadicalEnding"
                 : "NeutralEnding"
             );
         };
