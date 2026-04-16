@@ -108,9 +108,12 @@ public class BlackJack : Singleton<BlackJack>
             Deck.Instance.DisplayCard(card, _playerCardsCurrentPosition, true);
             _playerCardsCurrentPosition += Vector2.right * cardSpacing;
         }
+
+        if (_dealerHand.Sum != 21) return;
         
-        if (_dealerHand.Sum == 21)
-            Push();
+        _holeCardObject.GetComponent<Image>().sprite = _holeCard.Artwork;
+        dealerSum.text = _dealerHand.Sum.ToString();
+        Push();
     }
 
     private void PlayButtonsInteractable(bool state)
@@ -201,7 +204,7 @@ public class BlackJack : Singleton<BlackJack>
     private IEnumerator ResetGame()
     {
         yield return new WaitForSeconds(endDelay);
-
+        
         MusicController.Instance.RevertSong();
         
         inputActionAsset.FindActionMap("Player").Enable();

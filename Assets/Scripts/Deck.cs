@@ -13,14 +13,6 @@ public class Deck : Singleton<Deck>
     [SerializeField] private GameObject mockDeck;
     [SerializeField] private float cardMoveTime;
 
-    private void Update()
-    {
-        if (!Input.GetKeyDown(KeyCode.X)) return;
-        
-        Card pickedCard = DrawCard();
-        DisplayCard(pickedCard, Vector2.zero, true);
-    }
-
     public Card DrawCard()
     {
         if (Cards.Count == 0)
