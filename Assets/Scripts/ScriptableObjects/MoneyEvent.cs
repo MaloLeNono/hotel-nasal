@@ -1,5 +1,4 @@
 ﻿using Abstract;
-using ScriptableObjects.Dialog;
 using UnityEngine;
 
 namespace ScriptableObjects

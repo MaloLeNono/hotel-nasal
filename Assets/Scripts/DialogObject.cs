@@ -1,5 +1,4 @@
 using Interfaces;
-using ScriptableObjects.Dialog;
 using UnityEngine;
 
 public class DialogObject : MonoBehaviour, IInteractable
