@@ -15,3 +15,4 @@ MonoBehaviour:
   itemName: Torche
   value: 20
   type: 0
+  sellable: 0

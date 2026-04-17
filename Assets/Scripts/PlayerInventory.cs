@@ -23,10 +23,8 @@ public class PlayerInventory : Singleton<PlayerInventory>
 
     [Header("Config")]
     [SerializeField] private Canvas canvas;
-    [SerializeField] private Vector2 itemPosition;
     [SerializeField] private GameObject itemInfoPrefab;
     [SerializeField] private Transform itemParent;
-    [SerializeField] private float padding;
 
     private Inventory<ItemData> _inventory;
     private InputAction _toggleInventoryAction;
@@ -60,6 +58,10 @@ public class PlayerInventory : Singleton<PlayerInventory>
         var itemData = itemView.GetComponent<InventoryItemView>();
         itemData.item = item;
         itemText.text = $"[ {item.type.ToString().ToUpper()} ] - {item.itemName}";
+
+        if (!itemData.item.sellable)
+            itemText.text += " (INVENDABLE)";
+        
         itemText.color = item.type switch
         {
             ItemType.Typique => commonColor,
@@ -72,9 +74,6 @@ public class PlayerInventory : Singleton<PlayerInventory>
             _ => itemText.color
         };
         
-        Vector2 textPosition = new(itemPosition.x, itemPosition.y - padding * _inventory.Count);
-        itemView.GetComponent<RectTransform>()
-            .anchoredPosition = textPosition;
         _inventory.AddItem(item);
     }
 

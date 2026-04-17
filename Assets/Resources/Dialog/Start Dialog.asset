@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Start Dialog
   m_EditorClassIdentifier: 
   dialogLines:
-  - text: (Je devrais aller chercher ma femme...)
+  - text: "\xC7a fait longtemps que je n'ai pas vu ma femme..."
     enterLineEvent: {fileID: 0}
     expression: {fileID: 21300000, guid: 23436ed60daccb049a5624756b123e15, type: 3}
     timeBetweenCharacters: 0
@@ -30,7 +30,7 @@ MonoBehaviour:
     canRespond: 0
     voiceline: {fileID: 0}
     continueEvent: {fileID: 0}
-  - text: "(Elle est probablement au dernier \xE9tage.)"
+  - text: "Elle est probablement au dernier \xE9tage. Je crois qu'il y en a 5..."
     enterLineEvent: {fileID: 0}
     expression: {fileID: 21300000, guid: 23436ed60daccb049a5624756b123e15, type: 3}
     timeBetweenCharacters: 0

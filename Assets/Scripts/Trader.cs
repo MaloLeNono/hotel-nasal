@@ -27,7 +27,7 @@ public class Trader : MonoBehaviour, IInteractable
             _audioSource.Play();
             _animator.SetTrigger(Withdraw);
             List<ItemData> items = new();
-            foreach (ItemData item in PlayerInventory.Instance.Items)
+            foreach (ItemData item in PlayerInventory.Instance.Items.Where(x => x.sellable))
             {
                 Wallet.Instance.money.Amount += item.value;
                 items.Add(item);
@@ -41,7 +41,7 @@ public class Trader : MonoBehaviour, IInteractable
 
     public void Interact()
     {
-        if (PlayerInventory.Instance.Items.Count == 0)
+        if (!PlayerInventory.Instance.Items.Any(x => x.sellable))
         {
             DialogController.Instance.StartDialog("Je n'ai rien a vendre...");
             return;

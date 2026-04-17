@@ -43,6 +43,7 @@
   <ItemGroup>
     <Compile Include="Assets\Scripts\Money.cs" />
     <Compile Include="Assets\Scripts\VolumeController.cs" />
+    <Compile Include="Assets\Scripts\MusicVolumeController.cs" />
     <Compile Include="Assets\Scripts\Suit.cs" />
     <Compile Include="Assets\Scripts\RoomSign.cs" />
     <Compile Include="Assets\Scripts\SceneFadeIn.cs" />
@@ -91,6 +92,7 @@
     <Compile Include="Assets\Scripts\TextBehaviour.cs" />
     <Compile Include="Assets\Scripts\TextMixerBehaviour.cs" />
     <Compile Include="Assets\Scripts\SpriteAnimation.cs" />
+    <Compile Include="Assets\Scripts\Footsteps.cs" />
     <Compile Include="Assets\Scripts\PauseController.cs" />
     <Compile Include="Assets\Scripts\Enums\DancerDance.cs" />
     <Compile Include="Assets\Scripts\FloorSwitcher.cs" />
@@ -131,8 +133,7 @@
     <Compile Include="Assets\Scripts\Trap.cs" />
     <Compile Include="Assets\Scripts\BilliardBall.cs" />
     <Compile Include="Assets\Scripts\DanceFloor.cs" />
-    <Compile Include="Assets\Scripts\Footsteps.cs" />
-    <Compile Include="Assets\Scripts\MusicVolumeController.cs" />
+    <Compile Include="Assets\Scripts\DataClasses\FootstepData.cs" />
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Overlay.shader" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap.shader" />

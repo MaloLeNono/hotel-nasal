@@ -15,3 +15,4 @@ MonoBehaviour:
   itemName: "Cl\xE9"
   value: 20
   type: 0
+  sellable: 0

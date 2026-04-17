@@ -9,5 +9,6 @@ namespace ScriptableObjects
         public string itemName;
         public int value;
         public ItemType type;
+        public bool sellable = true;
     }
 }
