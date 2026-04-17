@@ -17,7 +17,7 @@ public class Deck : Singleton<Deck>
     {
         if (Cards.Count == 0)
         {
-            Card card = ScriptableObject.CreateInstance<Card>();
+            var card = ScriptableObject.CreateInstance<Card>();
             card.Value = -1;
             card.Suit = Suit.Invalid;
             card.Rank = Rank.Invalid;

@@ -72,6 +72,7 @@
     <Compile Include="Assets\Scripts\DarkZone.cs" />
     <Compile Include="Assets\Scripts\Coin.cs" />
     <Compile Include="Assets\Scripts\ScriptableObjects\Dialog\DialogSectionData.cs" />
+    <Compile Include="Assets\Scripts\SineRotate.cs" />
     <Compile Include="Assets\Scripts\PlayerController.cs" />
     <Compile Include="Assets\Scripts\PlayerInventory.cs" />
     <Compile Include="Assets\Scripts\Fist.cs" />
@@ -130,7 +131,7 @@
     <Compile Include="Assets\Scripts\Trap.cs" />
     <Compile Include="Assets\Scripts\BilliardBall.cs" />
     <Compile Include="Assets\Scripts\DanceFloor.cs" />
-    <Compile Include="Assets\Scripts\SineRotate.cs" />
+    <Compile Include="Assets\Scripts\Footsteps.cs" />
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Overlay.shader" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap.shader" />
