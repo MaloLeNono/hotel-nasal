@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.SceneManagement;
 
 public class SpriteAnimation : MonoBehaviour
 {
@@ -43,7 +44,7 @@ public class SpriteAnimation : MonoBehaviour
 
     private void DamageAnimation(int deltaMoney)
     {
-        if (deltaMoney > 0) return;
+        if (deltaMoney > 0 || SceneManager.GetActiveScene().name != "Game") return;
         moneyParticles.Emit(Mathf.Abs(deltaMoney));
     }
 }

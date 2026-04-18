@@ -1,6 +1,6 @@
-using UnityEditor;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.SceneManagement;
 
 public class PauseController : MonoBehaviour
 {
@@ -44,11 +44,8 @@ public class PauseController : MonoBehaviour
 
     public void Exit()
     {
-        #if UNITY_EDITOR
-            EditorApplication.isPlaying = false;
-        #else
-            Application.Quit();
-        #endif
+        Time.timeScale = 1f;
+        SceneManager.LoadScene("Menu");
     }
 
     private void SwitchPauseStatus(bool pause)

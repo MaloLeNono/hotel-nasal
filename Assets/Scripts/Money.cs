@@ -4,7 +4,7 @@ using UnityEngine;
 [Serializable]
 public class Money
 {
-    public Action<int> OnMoneyChanged;
+    public event Action<int> OnMoneyChanged;
     [SerializeField] private int amount;
     public int Amount
     {

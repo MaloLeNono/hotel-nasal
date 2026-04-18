@@ -18,5 +18,10 @@ public class Wallet : Singleton<Wallet>
             loan.Update();
     }
 
-    private void OnDestroy() => loans.Clear();
+    public void ResetWallet()
+    {
+        money.Amount = 100;
+        debt = 0;
+        loans.Clear();
+    }
 }

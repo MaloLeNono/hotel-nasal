@@ -17,13 +17,4 @@ public class Singleton<T> : MonoBehaviour where T : MonoBehaviour
                 DontDestroyOnLoad(gameObject);
         }
     }
-
-    public static void DestroyInstance()
-    {
-        if (Instance is null) return;
-        
-        var obj = Instance.gameObject;
-        Instance = null;
-        Destroy(obj);
-    }
 }

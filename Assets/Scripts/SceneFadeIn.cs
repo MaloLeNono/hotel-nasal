@@ -13,7 +13,11 @@ public class SceneFadeIn : MonoBehaviour
         blackOverlay.gameObject.SetActive(true);
     }
 
-    private void Start() => StartCoroutine(FadeIn());
+    private void Start()
+    {
+        StopAllCoroutines();
+        StartCoroutine(FadeIn());
+    }
 
     private IEnumerator FadeIn()
     {
