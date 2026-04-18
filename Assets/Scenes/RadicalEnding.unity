@@ -4993,7 +4993,8 @@ MonoBehaviour:
     - {fileID: 8300000, guid: cce376193791c68448e4c68d5ba7648b, type: 3}
     - {fileID: 8300000, guid: dafa1d07603967441b8b6866572c0181, type: 3}
     - {fileID: 8300000, guid: 79ecc4c8cb63b354496f205b095aa7c1, type: 3}
-  feet: {fileID: 1785641444}
+  footPosition: {fileID: 1785641444}
+  footstepCooldown: 0.12
 --- !u!82 &473030989
 AudioSource:
   m_ObjectHideFlags: 0

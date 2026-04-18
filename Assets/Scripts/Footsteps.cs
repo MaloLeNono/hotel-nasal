@@ -9,10 +9,12 @@ public class Footsteps : MonoBehaviour
 {
     [SerializeField] private Tilemap tilemap;
     [SerializeField] private FootstepData[] footstepTable;
-    [SerializeField] private Transform feet;
+    [SerializeField] private Transform footPosition;
+    [SerializeField] private float footstepCooldown;
 
     private AudioSource _audioSource;
     private Dictionary<TileBase, AudioClip[]> _footstepMap;
+    private float _lastFootstepTime;
 
     private void Awake()
     {
@@ -22,7 +24,10 @@ public class Footsteps : MonoBehaviour
 
     public void PlayFootstep()
     {
-        Vector3Int cellPosition = tilemap.WorldToCell(feet.position);
+        if (Time.time - _lastFootstepTime < footstepCooldown) return;
+        _lastFootstepTime = Time.time;
+
+        Vector3Int cellPosition = tilemap.WorldToCell(footPosition.position);
         TileBase tile = tilemap.GetTile(cellPosition);
         bool success = _footstepMap.TryGetValue(tile, out AudioClip[] footsteps);
 

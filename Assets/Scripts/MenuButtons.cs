@@ -28,6 +28,8 @@ public class MenuButtons : MonoBehaviour
         }));
     }
 
+    public void MoreGames() => Application.OpenURL("https://saint-paul-studio.itch.io/");
+
     public void Quit()
     {
         overlay.gameObject.SetActive(true);
