@@ -21,14 +21,16 @@ MonoBehaviour:
       responseOption: 
       responseEvent: {fileID: 0}
       answerDialogSection: {fileID: 0}
+      keepControlsOff: 0
     secondResponse:
       responseOption: 
       responseEvent: {fileID: 0}
       answerDialogSection: {fileID: 0}
+      keepControlsOff: 0
     canRespond: 0
     voiceline: {fileID: 0}
     continueEvent: {fileID: 0}
-  - text: Bienvenue dans mon glorieux hotel!
+  - text: "Bienvenue dans mon glorieux h\xF4tel!"
     enterLineEvent: {fileID: 0}
     expression: {fileID: -1967326625, guid: b3af7beefe26a67488e6004fe4e86f0e, type: 3}
     timeBetweenCharacters: 0
@@ -36,10 +38,12 @@ MonoBehaviour:
       responseOption: 
       responseEvent: {fileID: 0}
       answerDialogSection: {fileID: 0}
+      keepControlsOff: 0
     secondResponse:
       responseOption: 
       responseEvent: {fileID: 0}
       answerDialogSection: {fileID: 0}
+      keepControlsOff: 0
     canRespond: 0
     voiceline: {fileID: 0}
     continueEvent: {fileID: 0}
@@ -51,10 +55,12 @@ MonoBehaviour:
       responseOption: Bien sur
       responseEvent: {fileID: 0}
       answerDialogSection: {fileID: 11400000, guid: 98b89ecd4b2d4db408caa99e703bb451, type: 2}
+      keepControlsOff: 0
     secondResponse:
       responseOption: Pas vraiment
       responseEvent: {fileID: 0}
       answerDialogSection: {fileID: 11400000, guid: 369c5b0e0d980e44ba1fd1db84befd2e, type: 2}
+      keepControlsOff: 0
     canRespond: 1
     voiceline: {fileID: 0}
     continueEvent: {fileID: 0}

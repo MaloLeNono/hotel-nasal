@@ -15,7 +15,7 @@ MonoBehaviour:
   dialogLines:
   - text: Hm? Vous me reconnaissez?
     enterLineEvent: {fileID: 0}
-    expression: {fileID: -1967326625, guid: b3af7beefe26a67488e6004fe4e86f0e, type: 3}
+    expression: {fileID: -1805575051, guid: b3af7beefe26a67488e6004fe4e86f0e, type: 3}
     timeBetweenCharacters: 0
     firstResponse:
       responseOption: 
@@ -30,9 +30,9 @@ MonoBehaviour:
     canRespond: 0
     voiceline: {fileID: 0}
     continueEvent: {fileID: 0}
-  - text: "Ahh, vous devez parler de mon fr\xE8re! Oui, on se ressemble beaucoup..."
+  - text: "Ahh, vous devez penser de mon fr\xE8re! Oui, on se ressemble beaucoup."
     enterLineEvent: {fileID: 0}
-    expression: {fileID: -1967326625, guid: b3af7beefe26a67488e6004fe4e86f0e, type: 3}
+    expression: {fileID: -1805575051, guid: b3af7beefe26a67488e6004fe4e86f0e, type: 3}
     timeBetweenCharacters: 0
     firstResponse:
       responseOption: 
@@ -47,19 +47,19 @@ MonoBehaviour:
     canRespond: 0
     voiceline: {fileID: 0}
     continueEvent: {fileID: 0}
-  - text: Sauf que lui, tout ce qu'il veut c'est de l'argent...
+  - text: Sauf que lui, c'est un escroc! Il veut juste ton argent!
     enterLineEvent: {fileID: 0}
-    expression: {fileID: -1967326625, guid: b3af7beefe26a67488e6004fe4e86f0e, type: 3}
+    expression: {fileID: -2067136717, guid: b3af7beefe26a67488e6004fe4e86f0e, type: 3}
     timeBetweenCharacters: 0
     firstResponse:
-      responseOption: Je comprend
+      responseOption: Il me donne de l'argent
       responseEvent: {fileID: 0}
-      answerDialogSection: {fileID: 11400000, guid: a192ce8d51d74f243be3dd7e4505fa4e, type: 2}
+      answerDialogSection: {fileID: 11400000, guid: 61e512e0b2bd3af499d40819f8a0ed56, type: 2}
       keepControlsOff: 0
     secondResponse:
-      responseOption: Alors, on joue?
+      responseOption: D'accord
       responseEvent: {fileID: 0}
-      answerDialogSection: {fileID: 11400000, guid: 104e7ff341485e1428327757737bed01, type: 2}
+      answerDialogSection: {fileID: 11400000, guid: 2a034c005c89b8a4ca0298488fa81c6d, type: 2}
       keepControlsOff: 0
     canRespond: 1
     voiceline: {fileID: 0}

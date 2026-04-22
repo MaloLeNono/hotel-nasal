@@ -8,12 +8,14 @@ public class Water : Trap
     
     private AudioSource _zapSound;
     private float _timer;
+    private static int _waterCounter;
 
     private void Awake() => _zapSound = GetComponent<AudioSource>();
 
     private void OnTriggerEnter2D(Collider2D other)
     {
         if (!other.CompareTag("Player") || !activated) return;
+        _waterCounter++;
         playerController.UpdateSpeed(slowReferenceSpeed);
         _zapSound.Play();
         Wallet.Instance.money.Amount -= damage;
@@ -23,8 +25,11 @@ public class Water : Trap
     private void OnTriggerExit2D(Collider2D other)
     {
         if (!other.CompareTag("Player") || !activated) return;
-        playerController.UpdateSpeed(playerController.referenceSpeed);
+        _waterCounter--;
         _zapSound.Stop();
+        
+        if (_waterCounter != 0) return;
+        playerController.UpdateSpeed(playerController.referenceSpeed);
     }
 
     private void OnTriggerStay2D(Collider2D other)

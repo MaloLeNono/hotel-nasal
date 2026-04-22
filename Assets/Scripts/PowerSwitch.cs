@@ -29,7 +29,7 @@ public class PowerSwitch : MonoBehaviour, IInteractable
     {
         if (_switched)
         {
-            DialogController.Instance.StartDialog("J'ai deja restaure le courant.");
+            DialogController.Instance.StartDialog("J'ai déjà restauré le courant.");
             return;
         }
         

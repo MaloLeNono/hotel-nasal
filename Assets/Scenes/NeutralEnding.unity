@@ -202,7 +202,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Je suis sorti de l'h\xF4tel..."
+  m_text: "J'ai quitt\xE9 l'h\xF4tel..."
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: c215e48514ed44744b97c0421d5586b9, type: 2}
   m_sharedMaterial: {fileID: 3586199864970123708, guid: c215e48514ed44744b97c0421d5586b9, type: 2}
@@ -5519,6 +5519,8 @@ PlayableDirector:
     value: {fileID: 728561999}
   - key: {fileID: 1267380403571636483, guid: 435467dae754ac84fbff636108e44ffa, type: 2}
     value: {fileID: 1543007419}
+  - key: {fileID: -1348520633376854888, guid: 435467dae754ac84fbff636108e44ffa, type: 2}
+    value: {fileID: 1182636951}
   m_ExposedReferences:
     m_References: []
 --- !u!114 &1182636950
