@@ -10,10 +10,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: a43b157910b8eb5439b57e08973b7ea2, type: 3}
-  m_Name: Je Comprend Branch
+  m_Name: Il me donne de l'argent Branch
   m_EditorClassIdentifier: 
   dialogLines:
-  - text: Merci! C'est gentil.
+  - text: "Vous avez juste \xE9t\xE9 chanceux! Il vous ruinera \xE0 la premi\xE8re
+      occasion!"
     enterLineEvent: {fileID: 0}
     expression: {fileID: -1805575051, guid: b3af7beefe26a67488e6004fe4e86f0e, type: 3}
     timeBetweenCharacters: 0
