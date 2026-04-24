@@ -3,4 +3,4 @@
 ## Pour Mélanie:
 
 Tous les scripts sont dans `Assets/Scripts`.
-Vous pouvez trouver les builds pour Windows x64 et pour WebGL dans la section Releases. (https://github.com/MaloLeNono/hotel-nasal/releases/tag/1.0.0)
+Vous pouvez trouver les builds pour Windows x64 et pour WebGL dans la section Releases. (https://github.com/MaloLeNono/hotel-nasal/releases)
