@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using System;
+using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.SceneManagement;
 
@@ -46,5 +47,11 @@ public class SpriteAnimation : MonoBehaviour
     {
         if (deltaMoney > 0 || SceneManager.GetActiveScene().name != "Game") return;
         moneyParticles.Emit(Mathf.Abs(deltaMoney));
+    }
+
+    private void OnDestroy()
+    {
+        if (Wallet.Instance is not null)
+            Wallet.Instance.money.OnMoneyChanged -= DamageAnimation;
     }
 }
