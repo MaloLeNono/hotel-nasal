@@ -827,6 +827,15 @@
                     "processors": "",
                     "interactions": "",
                     "initialStateCheck": false
+                },
+                {
+                    "name": "NextDialog",
+                    "type": "Button",
+                    "id": "059f783c-0453-4896-b545-c93c9702ce4e",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
                 }
             ],
             "bindings": [
@@ -838,6 +847,17 @@
                     "processors": "",
                     "groups": "Keyboard&Mouse",
                     "action": "SkipText",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "e4d907ea-9455-48db-a925-a9b7a6ccff1e",
+                    "path": "<Keyboard>/leftCtrl",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Keyboard&Mouse",
+                    "action": "NextDialog",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }

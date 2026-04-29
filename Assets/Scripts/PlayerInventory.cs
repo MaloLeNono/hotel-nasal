@@ -77,7 +77,7 @@ public class PlayerInventory : Singleton<PlayerInventory>
         _inventory.AddItem(item);
     }
 
-    public void RemoveItem(ItemData item)
+    public bool RemoveItem(ItemData item)
     {
         GameObject itemViewToRemove = (
             from itemView in _itemViews
@@ -87,10 +87,12 @@ public class PlayerInventory : Singleton<PlayerInventory>
             select itemView
         ).FirstOrDefault();
 
-        if (!itemViewToRemove) return;
+        if (!itemViewToRemove) return false;
         
         _inventory.RemoveItem(item);
         _itemViews.Remove(itemViewToRemove);
         Destroy(itemViewToRemove);
+
+        return true;
     }
 }

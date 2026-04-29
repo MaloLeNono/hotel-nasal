@@ -30,6 +30,7 @@ public class DialogController : Singleton<DialogController>
     private HashSet<char> _acceptedPunctuationSet;
 
     private InputAction _skipTextAction;
+    private InputAction _nextDialogAction;
     private InputActionMap _playerMap;
     private InputActionMap _dialogMap;
     private TextMeshProUGUI _firstResponseText;
@@ -48,6 +49,7 @@ public class DialogController : Singleton<DialogController>
     private void OnEnable()
     {
         _skipTextAction = inputActions.FindAction("SkipText");
+        _nextDialogAction = inputActions.FindAction("NextDialog");
         _playerMap = inputActions.FindActionMap("Player");
         _dialogMap = inputActions.FindActionMap("Dialog");
     }
@@ -58,6 +60,12 @@ public class DialogController : Singleton<DialogController>
         
         if (debugDialog)
             StartDialog(debugDialog);
+    }
+
+    private void Update()
+    {
+        if (_nextDialogAction.WasPressedThisFrame())
+            continueButton.onClick?.Invoke();
     }
 
     public void StartDialog(DialogSectionData dialogSection)

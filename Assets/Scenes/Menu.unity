@@ -7557,7 +7557,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "H\xD4TEL NASAL V. 1.0.0"
+  m_text: "H\xD4TEL NASAL V. 1.0.2"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f8115d133f27f14ca8f5d7288a0e03e, type: 2}
   m_sharedMaterial: {fileID: 1009983688243664677, guid: 8f8115d133f27f14ca8f5d7288a0e03e, type: 2}

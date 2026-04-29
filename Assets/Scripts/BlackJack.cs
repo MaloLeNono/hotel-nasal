@@ -19,6 +19,7 @@ public class BlackJack : Singleton<BlackJack>
     [SerializeField] private TextMeshProUGUI playerSum;
     [SerializeField] private TextMeshProUGUI dealerSum;
     [SerializeField] private TextMeshProUGUI betIndicator;
+    [SerializeField] private TextMeshProUGUI winIndicator;
     
     [Header("Config")]
     [SerializeField] private Vector2 playerCardsPosition;
@@ -26,6 +27,9 @@ public class BlackJack : Singleton<BlackJack>
     [SerializeField] private float cardSpacing;
     [SerializeField] private float endDelay;
     [SerializeField] private AudioClip music;
+    [SerializeField] private string winText;
+    [SerializeField] private string pushText;
+    [SerializeField] private string bustText;
     
     private Card _holeCard;
     private GameObject _holeCardObject;
@@ -126,6 +130,8 @@ public class BlackJack : Singleton<BlackJack>
     {
         if (_isResetting) return;
         _isResetting = true;
+
+        ShowWinIndicator(bustText);
         
         PlayButtonsInteractable(false);
         StopAllCoroutines();
@@ -136,6 +142,8 @@ public class BlackJack : Singleton<BlackJack>
     {
         if (_isResetting) return;
         _isResetting = true;
+        
+        ShowWinIndicator(winText);
         
         Wallet.Instance.money.Amount += _bet;
         if (_playerHand.IsBlackJack())
@@ -156,10 +164,18 @@ public class BlackJack : Singleton<BlackJack>
         if (_isResetting) return;
         _isResetting = true;
         
+        ShowWinIndicator(pushText);
+        
         Wallet.Instance.money.Amount += _bet;
         PlayButtonsInteractable(false);
         StopAllCoroutines();
         StartCoroutine(ResetGame());
+    }
+
+    private void ShowWinIndicator(string text)
+    {
+        winIndicator.text = text;
+        winIndicator.transform.parent.gameObject.SetActive(true);
     }
 
     private IEnumerator DealerOnStand()
@@ -219,6 +235,7 @@ public class BlackJack : Singleton<BlackJack>
         
         dealerSum.gameObject.SetActive(false);
         playerSum.gameObject.SetActive(false);
+        winIndicator.transform.parent.gameObject.SetActive(false);
         
         var displayedCards = GameObject.FindGameObjectsWithTag("Card");
 

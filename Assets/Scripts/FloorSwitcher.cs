@@ -1,4 +1,5 @@
 ﻿using System.Collections;
+using System.Globalization;
 using Interfaces;
 using ScriptableObjects.Dialog;
 using UnityEngine;
@@ -20,6 +21,7 @@ public class FloorSwitcher : MonoBehaviour, IInteractable
     private void Awake()
     {
         dialog = Instantiate(dialog);
+        dialog.dialogLines[0].text += $" ({switchPrice.ToString("C", new CultureInfo("en-US"))})";
         dialog.dialogLines[0].firstResponse.action += () => StartCoroutine(SwitchFloor());
         _player =  GameObject.FindWithTag("Player").transform;
     }
@@ -27,7 +29,8 @@ public class FloorSwitcher : MonoBehaviour, IInteractable
     public virtual void Interact()
     {
         if (Wallet.Instance.money.Amount < switchPrice)
-            DialogController.Instance.StartDialog($"Je n'ai pas assez d'argent pour aller au prochain étage... Il me faut {switchPrice}$ pour accéder à l'ascenseur.");
+            DialogController.Instance.StartDialog(
+                $"Je n'ai pas assez d'argent pour aller au prochain étage... Il me faut {switchPrice.ToString("C", new CultureInfo("en-US"))} pour accéder à l'ascenseur.");
         else
             DialogController.Instance.StartDialog(dialog);
     }

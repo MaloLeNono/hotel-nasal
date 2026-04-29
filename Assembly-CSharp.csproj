@@ -134,6 +134,7 @@
     <Compile Include="Assets\Scripts\Trap.cs" />
     <Compile Include="Assets\Scripts\BilliardBall.cs" />
     <Compile Include="Assets\Scripts\DanceFloor.cs" />
+    <Compile Include="Assets\Scripts\RemoveItems.cs" />
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Overlay.shader" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap.shader" />
